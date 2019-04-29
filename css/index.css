@@ -153,8 +153,30 @@ h5 {
 
 /* ################################################# */
 .container {
+  max-width: 900px;
   margin: 0 auto;
-  width: 900px;
+  border: 1px solid red;
+  padding: 20px 1.25%;
+}
+
+@media (max-width: 800px) {
+  .container {
+    background: skyblue;
+  }
+  .img-top {
+    display: none;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .logo {
+    order: 1;
+    padding-bottom: 20px;
+  }
+  header nav {
+    order: 2;
+  }
 }
 
 header {
@@ -197,7 +219,9 @@ header nav a {
 .title .button {
   background-color: white;
   border: 1px solid black;
-  width: 20%;
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
 }
 
 .title h1 {
@@ -214,6 +238,7 @@ header nav a {
 /* ###################################################### */
 
 .middle-img {
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -231,7 +256,9 @@ header nav a {
 }
 
 /* ###################################################### */
-
+.contact {
+  padding-bottom: 30px;
+}
 address {
   margin-top: 30px;
   border-top: 1px solid black;
