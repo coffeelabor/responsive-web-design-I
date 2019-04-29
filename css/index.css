@@ -179,6 +179,43 @@ h5 {
   }
 }
 
+@media (max-width: 500px) {
+  .container {
+    background: aquamarine;
+  }
+  .img-top {
+    display: none;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .logo {
+    order: 1;
+    padding-bottom: 20px;
+  }
+  header nav {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  header nav a {
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .middle-content {
+    flex-wrap: wrap;
+    height: 200px;
+  }
+
+  .bottom-content {
+    flex-wrap: wrap;
+  }
+}
+
 header {
   width: 100%;
   display: flex;
