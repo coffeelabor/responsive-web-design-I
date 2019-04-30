@@ -155,65 +155,8 @@ h5 {
 .container {
   max-width: 900px;
   margin: 0 auto;
-  border: 1px solid red;
+
   padding: 20px 1.25%;
-}
-
-@media (max-width: 800px) {
-  .container {
-    background: skyblue;
-  }
-  .img-top {
-    display: none;
-  }
-  header {
-    display: flex;
-    flex-direction: column;
-  }
-  header .logo {
-    order: 1;
-    padding-bottom: 20px;
-  }
-  header nav {
-    order: 2;
-  }
-}
-
-@media (max-width: 500px) {
-  .container {
-    background: aquamarine;
-  }
-  .img-top {
-    display: none;
-  }
-  header {
-    display: flex;
-    flex-direction: column;
-  }
-  header .logo {
-    order: 1;
-    padding-bottom: 20px;
-  }
-  header nav {
-    order: 2;
-    display: flex;
-    flex-direction: column;
-  }
-  header nav a {
-    display: inline;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-  }
-  .middle-content {
-    flex-wrap: wrap;
-    height: 200px;
-  }
-
-  .bottom-content {
-    flex-wrap: wrap;
-  }
 }
 
 header {
@@ -304,4 +247,72 @@ address {
 span {
   display: block;
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  .img-top {
+    display: none;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .logo {
+    order: 1;
+    padding-bottom: 20px;
+  }
+  header nav {
+    order: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .img-top {
+    display: none;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .logo {
+    order: 1;
+    padding-bottom: 20px;
+  }
+  header nav {
+    width: 100%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  header nav a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-top: 1px solid black;
+  }
+  header nav a:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  .middle-content {
+    flex-wrap: wrap;
+    height: 200px;
+  }
+
+  .middle-content-p:last-child {
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  .middle-img {
+    margin-top: 30px;
+  }
+  .bottom-content {
+    flex-wrap: wrap;
+  }
+
+  .bottom-content-p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
